@@ -8,7 +8,7 @@ function Sobre() {
         backgroundColor: "#ffffff",
         padding: "40px",
         textAlign: "center",
-        fontFamily: "Verdana, sans-serif",
+        fontFamily: "PT Sans, sans-serif",
       }}
     >
       <p

@@ -37,6 +37,7 @@ function Home() {
         backgroundColor: "#ffffff",
         padding: "40px",
         textAlign: "center",
+        fontFamily: "PT Sans, sans-serif",
       }}
     >
       <h1
