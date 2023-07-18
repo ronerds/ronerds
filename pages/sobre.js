@@ -36,29 +36,31 @@ function Sobre() {
           Professor Ronaldo Lavestein - Escola Industrial - Casa Branca
         </p>
       </div>
-      <Link href="/">
-        <button
-          style={{
-            backgroundColor: "#3498db",
-            color: "#ffffff",
-            border: "1px solid #3498db",
-            borderRadius: "4px",
-            padding: "10px 20px",
-            cursor: "pointer",
-            transition: "background-color 0.3s ease",
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.backgroundColor = "#ffffff";
-            e.target.style.color = "#3498db";
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.backgroundColor = "#3498db";
-            e.target.style.color = "#ffffff";
-          }}
-        >
-          Voltar
-        </button>
-      </Link>
+      <div style={{ marginBottom: "20px" }}>
+        <Link href="/" passHref>
+          <button
+            style={{
+              backgroundColor: "#3498db",
+              color: "#ffffff",
+              border: "1px solid #3498db",
+              borderRadius: "4px",
+              padding: "10px 20px",
+              cursor: "pointer",
+              transition: "background-color 0.3s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = "#ffffff";
+              e.target.style.color = "#3498db";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = "#3498db";
+              e.target.style.color = "#ffffff";
+            }}
+          >
+            Voltar
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,40 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Link from "next/link";
 
 function Home() {
-  const buttonRef = useRef(null);
-
-  const handleDownloadPDF = () => {
-    const link = document.createElement("a");
-    link.href = "/PCII.pdf";
-    link.download = "PCII.pdf";
-    link.click();
-  };
-
-  const handleOpenPDF = () => {
-    window.open("/PCII.pdf", "_blank");
-  };
-
-  useEffect(() => {
-    const buttons = document.querySelectorAll("button");
-    let maxWidth = 0;
-
-    buttons.forEach((button) => {
-      const { offsetWidth } = button;
-      if (offsetWidth > maxWidth) {
-        maxWidth = offsetWidth;
-      }
-    });
-
-    buttons.forEach((button) => {
-      button.style.width = `${maxWidth}px`;
-    });
-  }, []);
-
   return (
     <div
       style={{
-        backgroundColor: "#ffffff",
         padding: "40px",
         textAlign: "center",
         fontFamily: "PT Sans, sans-serif",
@@ -53,7 +23,7 @@ function Home() {
       </div>
       <div
         style={{
-          backgroundColor: "#ffffff",
+          backgroundColor: "#f5f5f5",
           padding: "20px",
           marginBottom: "20px",
         }}
@@ -62,15 +32,8 @@ function Home() {
           ETEC Dr. Francisco Nogueira de Lima
         </p>
       </div>
-      <div
-        style={{
-          backgroundColor: "#f5f5f5",
-          padding: "20px",
-          marginBottom: "20px",
-        }}
-      >
+      <div style={{ marginBottom: "20px" }}>
         <button
-          ref={buttonRef}
           style={{
             backgroundColor: "#3498db",
             color: "#ffffff",
@@ -83,7 +46,12 @@ function Home() {
             width: "120px",
             whiteSpace: "nowrap",
           }}
-          onClick={handleDownloadPDF}
+          onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/PCII.pdf";
+            link.download = "PCII.pdf";
+            link.click();
+          }}
           onMouseEnter={(e) => {
             e.target.style.backgroundColor = "#ffffff";
             e.target.style.color = "#3498db";
@@ -107,7 +75,9 @@ function Home() {
             width: "120px",
             whiteSpace: "nowrap",
           }}
-          onClick={handleOpenPDF}
+          onClick={() => {
+            window.open("/PCII.pdf", "_blank");
+          }}
           onMouseEnter={(e) => {
             e.target.style.backgroundColor = "#ffffff";
             e.target.style.color = "#3498db";
@@ -119,6 +89,14 @@ function Home() {
         >
           Abrir PDF
         </button>
+      </div>
+      <div
+        style={{
+          backgroundColor: "#f5f5f5",
+          padding: "20px",
+          marginBottom: "20px",
+        }}
+      >
         <Link href="/sobre" passHref>
           <button
             style={{
