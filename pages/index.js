@@ -40,24 +40,32 @@ function Home() {
         fontFamily: "PT Sans, sans-serif",
       }}
     >
-      <p
-        style={{
-          color: "#333333",
-          fontSize: "28px",
-          fontWeight: "bold",
-          marginBottom: "20px",
-          textTransform: "uppercase",
-        }}
-      >
-        Professor Ronaldo Lavestein
-      </p>
-      <p style={{ color: "#333333", fontSize: "18px", marginBottom: "20px" }}>
-        ETEC Dr. Francisco Nogueira de Lima
-      </p>
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
+          backgroundColor: "#3498db",
+          padding: "20px",
+          marginBottom: "20px",
+        }}
+      >
+        <h1 style={{ color: "#ffffff", fontSize: "36px", fontWeight: "bold" }}>
+          Professor Ronaldo Lavestein
+        </h1>
+      </div>
+      <div
+        style={{
+          backgroundColor: "#ffffff",
+          padding: "20px",
+          marginBottom: "20px",
+        }}
+      >
+        <p style={{ color: "#333333", fontSize: "20px", marginBottom: "10px" }}>
+          ETEC Dr. Francisco Nogueira de Lima
+        </p>
+      </div>
+      <div
+        style={{
+          backgroundColor: "#f5f5f5",
+          padding: "20px",
           marginBottom: "20px",
         }}
       >
