@@ -40,7 +40,7 @@ function Home() {
         fontFamily: "PT Sans, sans-serif",
       }}
     >
-      <h1
+      <p
         style={{
           color: "#333333",
           fontSize: "28px",
@@ -50,7 +50,7 @@ function Home() {
         }}
       >
         Professor Ronaldo Lavestein
-      </h1>
+      </p>
       <p style={{ color: "#333333", fontSize: "18px", marginBottom: "20px" }}>
         ETEC Dr. Francisco Nogueira de Lima
       </p>
