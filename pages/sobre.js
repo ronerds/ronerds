@@ -19,7 +19,7 @@ function Sobre() {
         }}
       >
         <p style={{ color: "#ffffff", fontSize: "36px", fontWeight: "bold" }}>
-          Programação de Computadores II
+         Página do Professor Ronaldo
         </p>
       </div>
       <div
