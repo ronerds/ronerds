@@ -19,7 +19,7 @@ function Sobre() {
         }}
       >
         <p style={{ color: "#ffffff", fontSize: "36px", fontWeight: "bold" }}>
-         Página do Professor Ronaldo
+         Professor Ronaldo Lavestein
         </p>
       </div>
       <div
