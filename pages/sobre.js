@@ -19,7 +19,7 @@ function Sobre() {
         }}
       >
         <p style={{ color: "#ffffff", fontSize: "36px", fontWeight: "bold" }}>
-         Professor Ronaldo Lavestein
+          Professor Ronaldo Lavestein
         </p>
       </div>
       <div
@@ -33,7 +33,7 @@ function Sobre() {
           Curso Técnico em Informática
         </p>
         <p style={{ color: "#333333", fontSize: "18px", marginBottom: "10px" }}>
-          Professor Ronaldo Lavestein - Escola Industrial - Casa Branca
+          ETEC Dr. Francisco Nogueira de Lima - Casa Branca
         </p>
       </div>
       <div style={{ marginBottom: "20px" }}>
