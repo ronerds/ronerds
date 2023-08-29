@@ -79,7 +79,7 @@ function Home() {
             whiteSpace: "nowrap",
           }}
           onClick={() => {
-            window.open("/TemaTCC.pdf", "_blank");
+            window.open("/MaterialTCC.pdf", "_blank");
           }}
           onMouseEnter={(e) => {
             e.target.style.backgroundColor = "#ffffff";
